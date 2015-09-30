@@ -1,0 +1,28 @@
+{
+  "name": "NodeImageUpload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikki-b/nodeimageupload"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikki-b/nodeimageupload/issues"
+  },
+  "homepage": "https://github.com/nikki-b/nodeimageupload",
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "express": "^4.13.1",
+    "formidable": "^1.0.17",
+    "fs-extra": "^0.22.1",
+    "mongoose": "^3.8.24",
+    "quickthumb": "0.0.11"
+  }
+}

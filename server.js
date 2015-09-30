@@ -82,7 +82,8 @@ app.post('/users', function(req, res) {
     var file_name = randomString() + "." + extension;
     console.log(file_name);
     // location where we want to copy the uploaded file
-    var new_location = "uploads/";
+    // in a file for the individual user, in case we want to allow them to edit or add more later
+    var new_location = "uploads/" + user._id + "/";
     user.photo = new_location + file_name;
 
     fs.copy(temp_path, new_location + file_name, function(err){
